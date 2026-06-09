@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign Up</title>
+
+<style>
+  body{
+    background-image: url("https://images.unsplash.com/photo-1542751371-adc38448a05e");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-size: 16px;
+}
+
+form{
+    width: 250px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+label{
+  
+    display: block;
+    padding: 5px 0;
+    
+}
+
+input, select{
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 10px;
+    
+}
+
+button{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+}
+
+h1{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+a{
+    display: block;
+    text-align: center;
+}
+
+</style>
+
+</head>
+<body>
+
+<h1 align="center">Gaming Zone Sign Up</h1>
+
+<form action="index.html" method="post">
+
+<!-- Full Name input field -->
+<label>Full Name</label>
+
+<!-- required = user must fill this field
+     maxlength = user 30 character er beshi likha jabena
+     size = input box এর visible width -->
+<input type="text" maxlength="30" size="25" required>
+
+
+<!-- Email input field -->
+<label>Email</label>
+
+<!-- required = user must fill this field -->
+<input type="email" size="25" required>
+
+
+<!-- Password field -->
+<label>Password</label>
+
+<!-- required = password must be filled -->
+<input type="password" size="25" required>
+
+
+<!-- Date of Birth field -->
+<label>Date of Birth</label>
+
+<!-- type="date" = calendar theke date selec kore-->
+<input type="date" required>
+
+
+<!-- Age input -->
+<label>Age</label>
+
+<!-- min = minimum age 15
+     max = maximum age 50
+     step = 1 kore increase/decrease hobe
+     size = input box er visible width
+     required = must fill -->
+<input type="number" min="15" max="50" step="1" size="10" required>
+
+
+<!-- Country selection -->
+<label>Country</label>
+
+<!-- select + option = dropdown list -->
+<select required>
+    <option>Bangladesh</option>
+    <option>India</option>
+    <option>Nepal</option>
+</select>
+
+
+<!-- Favorite Game -->
+<label>Favorite Game</label>
+
+<!-- datalist = autocomplete suggestion list -->
+<input list="games" size="25">
+
+<datalist id="games">
+    <option value="Valorant">
+    <option value="PUBG">
+    <option value="Free Fire">
+    <option value="CS2">
+</datalist>
+
+
+<!-- Referral Code -->
+<label>Referral Code</label>
+
+<!-- readonly = user dekhte parbe change korte parbe na -->
+<input type="text" readonly value="GAME2026" size="20">
+
+
+<!-- Membership -->
+<label>Membership</label>
+
+<!-- disabled = user dekhte parbe kintu use/edit korte parbe na -->
+<input type="text" disabled value="Premium User" size="20">
+
+
+<br><br>
+
+<!-- Logo image -->
+<img
+src="https://cdn-icons-png.flaticon.com/512/686/686589.png"
+width="120"
+height="120"
+alt="logo">
+
+<br><br>
+
+<!-- Submit button -->
+<button type="submit">
+Sign Up
+</button>
+
+</form>
+
+<!-- Back link -->
+<p align="center">
+<a href="index.html">Back To Home</a>
+</p>
+
+</body>
+</html>
